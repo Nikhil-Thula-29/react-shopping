@@ -1,0 +1,4 @@
+Open any folder like f type cmd there and npx creat-react-app appName
+Open that folder in vscode after creating
+in cmd use this->npm start command 
+By default there will be app component in src/index.js where first data is rendering.
