@@ -1,0 +1,63 @@
+<script>
+
+    //usage of getters and setters
+
+    /* var username = prompt("Enter Name");
+    var designation = prompt("Enter Designation");
+    var productname = prompt("Enter Product name");
+    class Product {
+        _productName;
+        //accessors
+        get ProdName() {
+            return this._productName;
+        }
+        set ProdName(newName) {
+            if (designation == "admin") {
+                this._productName = newName;
+            } else {
+                document.writeln(`Unauthorized: Hello ${username} You are not authorized to set name`);
+            }
+        }
+
+    }
+    let obj = new Product();
+    obj.ProdName=productname;//setting
+    if (obj.ProdName) {
+        document.writeln("Product name: " + obj.ProdName);
+    } */
+
+
+//usage of getters and setters
+
+/* class Register{
+    Name="Samsung TV";
+    Rating={
+        Rate:{
+            count:500,
+            value:4.6
+        }
+    }
+    get RateValue(){
+        return this.Rating.Rate.value;
+    }
+}
+let obj=new Register();
+document.writeln("Rate value: "+obj.RateValue); */
+
+
+
+//constructor
+
+class BaseClass{
+    constructor(){
+        document.writeln("In Base Class");
+    }
+}
+class DerivedClass extends BaseClass{
+       constructor(){
+        super();    //it is mandatory to call parent class in js
+        document.writeln("In derived Class");
+       } 
+}
+let obj=new DerivedClass();
+</script>

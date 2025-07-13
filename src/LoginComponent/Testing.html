@@ -1,0 +1,16 @@
+<head>
+    <script>
+        var categ=["Mobiles","Tv","WashingMachine","Fans"];
+        function bodyload(){
+            for(var item of categ){
+            var li=document.createElement("li");
+            li.innerHTML=item;
+            document.querySelector("ol").appendChild(li);
+            }
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <ol>
+    </ol>
+</body>
